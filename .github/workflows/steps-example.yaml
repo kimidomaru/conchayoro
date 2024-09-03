@@ -5,7 +5,7 @@ on:
 
 jobs:
   hello_world_job:
-    runs-on: ububtu-latest
+    runs-on: ubuntu-latest
     name: Custom action Example
     steps:
       - name: Checkout
