@@ -1,0 +1,13 @@
+name: pipeline-basic
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: exec command
+        run: echo "Hello, World!"
