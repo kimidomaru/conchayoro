@@ -4,7 +4,7 @@ inputs:
   the-caller:
     description: 'Who is there'
     required: true
-    defaul
+    default: 'World'
 outputs:
   random-number:
     description: "RNG"
