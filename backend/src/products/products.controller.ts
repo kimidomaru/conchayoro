@@ -33,12 +33,12 @@ export class ProductsController {
   }
 
   @Put(':id')
-    update(
-      @Param('id') id: string,
-      @Body() updateProductDto: UpdateProductDto,
-    ): Promise<Product> {
+  update(
+    @Param('id') id: string,
+    @Body() updateProductDto: UpdateProductDto,
+  ): Promise<Product> {
       return this.productsService.update(id, updateProductDto);
-    }
+  }
 
   @Delete(':id')
     remove(@Param('id') id: string): Promise<void> {
